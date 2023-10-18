@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arimo';
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(#8dddea, #7bebd1);
+}
+
+.container {
+    max-width: 650px;
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.6);
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: left;
+    color: #fff;
+    padding-bottom: 8px;
+    border-bottom: 1px solid silver;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.inputbox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.inputbox:nth-child(2n) {
+    justify-content: end;
+}
+
+.inputbox label {
+    width: 95%;
+    color: #fff;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.inputbox input {
+    height: 40px;
+    width: 95%;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.inputbox input:is(:focus,:valid) {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.button button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #6acddd, #62c8b0);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button button:hover {
+    background-image: linear-gradient(to right, #62c8b0, #6acddd);
+}
+
+hr {
+    border: 3px solid #666; 
+    border-radius: 300px/10px; 
+    height: 0px; 
+    text-align: center;
+    margin-top: 20px;
+}
+
+.link {
+    margin-top: 20px;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
